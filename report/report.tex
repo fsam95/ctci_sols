@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\title{Cracking the Coding Interview}
+\begin{document}
+
+\section*{Preface}
+I thought it would be a good idea to document my endeavour 
+to complete Cracking the Coding Interview. It would be good
+for me to be able to articulate my approaches and maybe it would help you to 
+see how I arrived at (or didn't arrive) at some of the solutions. \\
+
+I was also driven to write this because I'm a little concerned my writing
+skills with begin atrophying since I finished my undergraduate studies.
+\section*{Recursion}
+\subsection*{Problem 8.6}
+I couldn't figure out this problem on my own after thinking for about 40 minutes.
+I thought about creating a tree rooted at 0 with each branch representing the
+addition of one of the four denominations (cent, nickel, dime, quarter). I
+would then count all of the nodes that have the value $n$ and that would be my result. \\
+
+However, this would lead to counting permutations of the same change denominations (e.g.
+a nickel and 5 cents would be included as change for a dime but 5 cents and a nickel
+would also be counted even though its the same combination as the former). \\
+
+Even the proposed solution was confusing to me because it wasn't clear why returning 1 
+for the penny case accounts for the accumulation of all the different ways of calculating
+the change. It becomes more clear if you draw a picture of what exactly is being counted.
+
+
+
+
+
+
+\end{document}
